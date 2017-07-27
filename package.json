@@ -5,7 +5,8 @@
   "repository": {},
   "license": "MIT",
   "scripts": {
-    "start": "node_modules/.bin/webpack --watch"
+    "start": "node_modules/.bin/webpack --watch",
+    "heroku": "node public/index.js"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
