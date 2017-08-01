@@ -3,9 +3,19 @@ $block: diokan-main;
 .#{$block} {
   position: relative;
   padding: 90px 0 0 100px;
-  &__inner{
+  &-inner{
     position: relative;
     padding: 8px 30px 30px;
+    &.#{$block} {
+      &-inner{
+        &__portfolio{
+          padding: 40px;
+        }
+        &__settings{
+          padding: 34px 30px 30px;
+        }
+      }
+    }
   }
   &__filter{
     @extend .flexbox;

@@ -45,4 +45,28 @@ $block: diokan-custom-input;
       }
     }
   }
+  &.#{$block} {
+    &__big{
+      .diokan-form-label{
+        font-size: 24px;
+        line-height: 28px;
+        color: $color2;
+        margin-bottom: 1px;
+      }
+      .#{$block} {
+        &__checkbox{
+          width: 34px;
+          height: 34px;
+          margin-right: 13px;
+          &:before{
+            font-size: 24px;
+            line-height: 0.92;
+            color:$color6;
+          }
+        }
+
+      }
+    }
+  }
+
 }

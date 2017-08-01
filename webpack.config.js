@@ -96,6 +96,12 @@ module.exports = {
         modules: ["node_modules", "spritesmith-generated"]
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jquery: "jquery",
+            "window.jQuery": "jquery",
+            jQuery:"jquery"
+        }),
         new ExtractTextPlugin({filename: "../css/index.css", allChunks: true}),
         new BrowserSyncPlugin({
             host: 'localhost',

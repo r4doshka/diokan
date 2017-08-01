@@ -3,10 +3,11 @@
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 @import "~font-awesome/scss/font-awesome.scss";
 @import "~slick-carousel/slick/slick.scss";
+@import "~ekko-lightbox/dist/ekko-lightbox.css";
 @import "fonts";
 @import "core";
 @import "typografics";
-@import "default-placeholder-animate";
+@import "default-placeholder";
 @import "controls";
 @import "header";
 @import "footer";
@@ -39,3 +40,9 @@
 @import "announcements";
 @import "dropdown";
 @import "slider";
+@import "gallery";
+@import "tabs";
+@import "settings";
+@import "confirmation";
+@import "payment-info";
+@import "clear-page";

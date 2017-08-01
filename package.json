@@ -33,8 +33,10 @@
     "webpack-spritesmith": "^0.3.3"
   },
   "dependencies": {
+    "ekko-lightbox": "^5.2.0",
     "font-awesome": "^4.7.0",
     "font-awesome-sass": "^4.7.0",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "slick-carousel": "^1.6.0"
   }
 }

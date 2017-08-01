@@ -4,8 +4,14 @@ $block: diokan-notification;
   @extend .flexbox;
   @extend .justify-between;
   @extend  .align-center;
-  padding: 12px 30px;
+  height: 46px;
+  padding: 0 30px;
   background: $color16;
+  &.#{$block} {
+    &__secondary{
+      background: $color1;
+    }
+  }
   &__description{
     flex:0 0 100%;
     text-align: center;
