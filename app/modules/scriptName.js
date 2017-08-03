@@ -23,6 +23,25 @@ const scriptName = () => {
         event.preventDefault();
         $(this).ekkoLightbox();
     });
+
+
+
+// sidebar open/close start
+
+    $('.diokan-side-tabs__item').on('click', function(){
+        if(!($('.diokan-side-tabs__item').hasClass('active'))){
+
+            $('.diokan-main').toggleClass('sidebar-opened');
+        }
+    });
+
+    $('.diokan-sidebar-tab-content__close').on('click', function(){
+        $('.diokan-main').removeClass('sidebar-opened');
+        $('.diokan-sidebar-tab-content .diokan-tab-pane, .diokan-side-tabs__item').removeClass('active');
+    });
+
+    // sidebar open/close end
+
 };
 
 export default scriptName();

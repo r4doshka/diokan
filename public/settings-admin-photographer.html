@@ -13,110 +13,275 @@
 <body>
 
 <div class="container nopadding">
-    <header class="diokan-header">
-        <div class="diokan-header-inner">
-            <div class="diokan-header__logo">
-                <div class="diokan-header__logo-text">
-                    Settings
-                </div>
-            </div>
-            <div class="diokan-header__action-group">
-                <div class="diokan-header__action-group-inner">
-                    <div class="diokan-balance-box">
-                        <div class="diokan-balance-box__title">
-                            Balance
-                        </div>
-                        <div class="diokan-balance-box__count">
-                            $641.77
-                        </div>
-                    </div>
-                </div>
-                <button class="diokan-btn diokan-btn-secondary diokan-btn-secondary_role-upload">
-                <span class="diokan-icon diokan-icon__upload">
-                </span>Upload
-                </button>
-            </div>
-        </div>
-    </header>
+
     <div class="diokan-content">
         <aside class="diokan-sidebar diokan-sidebar__fixed-right">
-            <div class="diokan-sidebar__top">
-                <div class="diokan-sidebar__logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="118" height="99" viewBox="0 0 118 99">
-                        <defs>
-                            <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
-                                <stop offset="0%" stop-color="#0788E2"/>
-                                <stop offset="100%" stop-color="#12A3E1"/>
-                            </linearGradient>
-                        </defs>
-                        <g fill="url(#a)" fill-rule="evenodd">
-                            <path d="M23.737 98.803H0V.403h23.737v8.422H10.91V90.38h12.826zM76.51 48.297c0-9.593-7.609-17.978-17.422-17.978-9.71 0-17.87 7.832-17.87 17.647 0 9.705 7.497 18.09 17.534 18.09 9.821 0 17.758-7.94 17.758-17.759m-48.522-.219c0-17.205 14.005-30.993 31.1-30.993 16.983 0 30.661 14.117 30.661 30.881 0 17.207-13.678 31.324-30.997 31.324-17.207 0-30.764-14.229-30.764-31.212M94 90.38h12.826V8.826H94V.403h23.737v98.4H94z"/>
-                        </g>
-                    </svg>
+            <div class="diokan-sidebar-group">
+                <div class="diokan-sidebar__top">
+                    <div class="diokan-sidebar__logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="118" height="32" viewBox="0 0 118 99">
+                            <defs>
+                                <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#0788E2"/>
+                                    <stop offset="100%" stop-color="#12A3E1"/>
+                                </linearGradient>
+                            </defs>
+                            <g fill="url(#a)" fill-rule="evenodd">
+                                <path d="M23.737 98.803H0V.403h23.737v8.422H10.91V90.38h12.826zM76.51 48.297c0-9.593-7.609-17.978-17.422-17.978-9.71 0-17.87 7.832-17.87 17.647 0 9.705 7.497 18.09 17.534 18.09 9.821 0 17.758-7.94 17.758-17.759m-48.522-.219c0-17.205 14.005-30.993 31.1-30.993 16.983 0 30.661 14.117 30.661 30.881 0 17.207-13.678 31.324-30.997 31.324-17.207 0-30.764-14.229-30.764-31.212M94 90.38h12.826V8.826H94V.403h23.737v98.4H94z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <ul class="diokan-side-tabs">
+                        <li class="diokan-side-tabs__item">
+                            <a href="#dashboard" class="diokan-side-tabs__item-link" data-toggle="tab">
+                            <span class="diokan-side-tabs__item-icon">
+                                <i class="fa fa-tachometer" aria-hidden="true"></i>
+                            </span>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="diokan-side-tabs__item">
+                            <a href="#photographers" class="diokan-side-tabs__item-link" data-toggle="tab">
+                            <span class="diokan-side-tabs__item-icon">
+                                <i class="fa fa-camera-retro" aria-hidden="true"></i>
+                            </span>
+                                Photographers
+                            </a>
+                        </li>
+                        <li class="diokan-side-tabs__item">
+                            <a href="#clients" class="diokan-side-tabs__item-link" data-toggle="tab">
+                            <span class="diokan-side-tabs__item-icon">
+                             <i class="fa fa-users" aria-hidden="true"></i>
+                            </span>
+                                Clients
+                            </a>
+                        </li>
+                        <li class="diokan-side-tabs__item">
+                            <a href="#earning" class="diokan-side-tabs__item-link" data-toggle="tab">
+                            <span class="diokan-side-tabs__item-icon">
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                            </span>
+                                Earnings
+                            </a>
+                        </li>
+                        <li class="diokan-side-tabs__item">
+                            <a href="#payments" class="diokan-side-tabs__item-link" data-toggle="tab">
+                            <span class="diokan-side-tabs__item-icon">
+                             <i class="fa fa-credit-card" aria-hidden="true"></i>
+                            </span>
+                                Payments
+                            </a>
+                        </li>
+                        <li class="diokan-side-tabs__item">
+                            <a href="#notifications" class="diokan-side-tabs__item-link" data-toggle="tab">
+                            <span class="diokan-side-tabs__item-icon">
+                               <i class="fa fa-bell" aria-hidden="true"></i>
+                            </span>
+                                Notifications
+                            </a>
+                        </li>
+                        <li class="diokan-side-tabs__item">
+                            <a href="#resources" class="diokan-side-tabs__item-link" data-toggle="tab">
+                            <span class="diokan-side-tabs__item-icon">
+                              <i class="fa fa-book" aria-hidden="true"></i>
+                            </span>
+                                Resources
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="diokan-side-menu">
-                    <li class="diokan-side-menu__item">
-                        <a href="" class="diokan-side-menu__item-link">
-                    <span class="diokan-side-menu__item-icon">
-                        <i class="fa fa-tachometer" aria-hidden="true"></i>
-                    </span>
-                            Dashboard
-                        </a>
-                    </li>
-                    <li class="diokan-side-menu__item">
-                        <a href="" class="diokan-side-menu__item-link">
-                    <span class="diokan-side-menu__item-icon">
-                        <i class="fa fa-camera-retro" aria-hidden="true"></i>
-                    </span>
-                            Sessions
-                        </a>
-                    </li>
-                    <li class="diokan-side-menu__item">
-                        <a href="" class="diokan-side-menu__item-link">
-                    <span class="diokan-side-menu__item-icon">
-                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                    </span>
-                            Earnings
-                        </a>
-                    </li>
-                    <li class="diokan-side-menu__item">
-                        <a href="" class="diokan-side-menu__item-link">
-                    <span class="diokan-side-menu__item-icon">
-                       <i class="fa fa-briefcase" aria-hidden="true"></i>
-                    </span>
-                            Portfolio
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="diokan-sidebar__bottom">
-                <div class="diokan-sidebar-info">
-                    <button class="diokan-btn diokan-messages-box" data-message-count="3">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </button>
-                    <div class="diokan-user-box">
-                        <div class="diokan-user-box__logo">
-                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                        </div>
-                        <div class="diokan-user-box__name">
-                            Trisha
+                <div class="diokan-sidebar__bottom">
+                    <div class="diokan-sidebar-info">
+                        <button class="diokan-btn diokan-messages-box" data-message-count="3">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </button>
+                        <div class="diokan-user-box">
+                            <div class="diokan-user-box__logo">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="diokan-user-box__name">
+                                Trisha
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="diokan-sidebar-tab-content">
+                <div class="diokan-tab-pane" id="dashboard">
+                    <div class="diokan-sidebar-tab-content__close">
+                        <button class="diokan-btn diokan-btn-close diokan-btn-close__small">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="diokan-user-state">
+                        <div class="diokan-user-state__name">
+                            Trisha Hensley
+                        </div>
+                        <div class="diokan-dropdown diokan-dropdown__sidebar">
+                            <button class="diokan-btn diokan-dropdown-toggle diokan-dropdown-toggle__user-state">
+                                Approved
+                                <span class="diokan-dropdown-caret diokan-dropdown-caret__right">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                            <div class="diokan-dropdown-panel  diokan-dropdown-panel__corner-left">
+                                <div class="diokan-dropdown-panel__intro">
+                                        <span class="diokan-dropdown-panel__intro-icon">
+                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                        </span>
+                                        Portfolio
+                                </div>
+                                <ul class="diokan-dropdown-menu">
+                                    <li class="diokan-dropdown-menu__item">
+                                        <a href="javascript:;" class="diokan-dropdown-menu__item-link">Unapproved</a>
+                                    </li>
+                                    <li class="diokan-dropdown-menu__item">
+                                        <a href="javascript:;" class="diokan-dropdown-menu__item-link">Needs Review</a>
+                                    </li>
+                                    <li class="diokan-dropdown-menu__item diokan-dropdown-menu__item_active">
+                                        <a href="javascript:;" class="diokan-dropdown-menu__item-link">Approved</a>
+                                    </li>
+                                    <li class="diokan-dropdown-menu__item">
+                                        <a href="javascript:;" class="diokan-dropdown-menu__item-link">Blocked</a>
+                                    </li>
+                                    <li class="diokan-dropdown-menu__item">
+                                        <a href="javascript:;" class="diokan-dropdown-menu__item-link">Deleted</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="diokan-side-menu">
+                        <li class="diokan-side-menu__item">
+                            <a href="" class="diokan-side-menu__item-link active">Settings</a>
+                        </li>
+                        <li class="diokan-side-menu__item">
+                            <a href="" class="diokan-side-menu__item-link">Public Profile</a>
+                        </li>
+                        <li class="diokan-side-menu__item">
+                            <a href="" class="diokan-side-menu__item-link">Portfolio</a>
+                        </li>
+                        <li class="diokan-side-menu__item">
+                            <a href="" class="diokan-side-menu__item-link">Sessions</a>
+                        </li>
+                        <li class="diokan-side-menu__item">
+                            <a href="" class="diokan-side-menu__item-link">Earnings</a>
+                        </li>
+                        <li class="diokan-side-menu__item">
+                            <a href="" class="diokan-side-menu__item-link">Billing and payments</a>
+                        </li>
+                        <li class="diokan-side-menu__item">
+                            <a href="" class="diokan-side-menu__item-link">Inbox</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="diokan-tab-pane" id="photographers">
+                    <div class="diokan-sidebar-tab-content__close">
+                        <button class="diokan-btn diokan-btn-close diokan-btn-close__small">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="diokan-user-state">
+                        <div class="diokan-user-state__name">
+                            Trisha Hensley
+                        </div>
+                        <div class="diokan-dropdown diokan-dropdown__sidebar">
+                            <button class="diokan-btn diokan-dropdown-toggle diokan-dropdown-toggle__user-state">
+                                Approved
+                                <span class="diokan-dropdown-caret diokan-dropdown-caret__right">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                            <div class="diokan-dropdown-panel  diokan-dropdown-panel__corner-left">
+                                <div class="diokan-dropdown-panel__intro">
+                                        <span class="diokan-dropdown-panel__intro-icon">
+                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                        </span>
+                                    Portfolio
+                                </div>
+                                <ul class="diokan-dropdown-menu">
+                                    <li class="diokan-dropdown-menu__item">
+                                        <a href="javascript:;" class="diokan-dropdown-menu__item-link">Unapproved</a>
+                                    </li>
+                                    <li class="diokan-dropdown-menu__item">
+                                        <a href="javascript:;" class="diokan-dropdown-menu__item-link">Needs Review</a>
+                                    </li>
+                                    <li class="diokan-dropdown-menu__item diokan-dropdown-menu__item_active">
+                                        <a href="javascript:;" class="diokan-dropdown-menu__item-link">Approved</a>
+                                    </li>
+                                    <li class="diokan-dropdown-menu__item">
+                                        <a href="javascript:;" class="diokan-dropdown-menu__item-link">Blocked</a>
+                                    </li>
+                                    <li class="diokan-dropdown-menu__item">
+                                        <a href="javascript:;" class="diokan-dropdown-menu__item-link">Deleted</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="diokan-side-menu">
+                        <li class="diokan-side-menu__item">
+                            <a href="" class="diokan-side-menu__item-link active">Settings</a>
+                        </li>
+                        <li class="diokan-side-menu__item">
+                            <a href="" class="diokan-side-menu__item-link">Public Profile</a>
+                        </li>
+                        <li class="diokan-side-menu__item">
+                            <a href="" class="diokan-side-menu__item-link">Portfolio</a>
+                        </li>
+                        <li class="diokan-side-menu__item">
+                            <a href="" class="diokan-side-menu__item-link">Sessions</a>
+                        </li>
+                        <li class="diokan-side-menu__item">
+                            <a href="" class="diokan-side-menu__item-link">Earnings</a>
+                        </li>
+                        <li class="diokan-side-menu__item">
+                            <a href="" class="diokan-side-menu__item-link">Billing and payments</a>
+                        </li>
+                        <li class="diokan-side-menu__item">
+                            <a href="" class="diokan-side-menu__item-link">Inbox</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </aside>
         <main class="diokan-main">
+            <div class="diokan-header">
+                <div class="diokan-header-inner">
+                    <div class="diokan-header__logo">
+                        <div class="diokan-header__logo-text">
+                            Settings
+                        </div>
+                    </div>
+                    <div class="diokan-header__action-group">
+                        <div class="diokan-header__action-group-inner">
+                            <div class="diokan-balance-box">
+                                <div class="diokan-balance-box__title">
+                                    Balance
+                                </div>
+                                <div class="diokan-balance-box__count">
+                                    $641.77
+                                </div>
+                            </div>
+                        </div>
+                        <button class="diokan-btn diokan-btn-secondary diokan-btn-secondary_role-upload">
+                <span class="diokan-icon diokan-icon__upload">
+                </span>Upload
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="diokan-main-inner diokan-main-inner__settings">
                 <div class="diokan-settings">
                     <div class="diokan-tab-nav-wrap">
                         <ul  class="diokan-tab-nav">
-                            <li class="diokan-tab-nav__item">
+                            <li class="diokan-tab-nav__item active">
                                 <a  href="#1b" class="diokan-tab-nav__item-link" data-toggle="tab">Account</a>
                             </li>
                             <li  class="diokan-tab-nav__item">
                                 <a href="#2b" class="diokan-tab-nav__item-link" data-toggle="tab">Address</a>
                             </li>
-                            <li  class="diokan-tab-nav__item active">
+                            <li  class="diokan-tab-nav__item">
                                 <a href="#3b" class="diokan-tab-nav__item-link" data-toggle="tab">Payment Info</a>
                             </li>
                             <li  class="diokan-tab-nav__item">
@@ -126,7 +291,7 @@
                     </div>
                     <div class="diokan-settings-box">
                         <div class="diokan-tab-content">
-                            <div class="diokan-tab-pane" id="1b">
+                            <div class="diokan-tab-pane active" id="1b">
                                 <form action="" class="diokan-form diokan-form-settings">
                                     <div class="row">
                                         <div class="col-md-3">
@@ -182,7 +347,7 @@
                                         <div class="col-md-3">
                                             <div class="diokan-account-password">
                                                 <label class="diokan-form-label">
-                                                    Phone
+                                                    Password
                                                 </label>
                                                 <div class="diokan-account-password__description">
                                                     <div class="diokan-account-password__field">
@@ -211,9 +376,9 @@
                                     </div>
                                 </form>
                                 <div class="diokan-controls-right">
-                                    <div class="diokan-btn diokan-btn-primary diokan-btn-primary__settings">
+                                    <button class="diokan-btn diokan-btn-primary diokan-btn-primary__settings">
                                         Save
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                             <div class="diokan-tab-pane" id="2b">
@@ -274,90 +439,46 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="diokan-tab-pane active" id="3b">
+                            <div class="diokan-tab-pane" id="3b">
                                 <div class="diokan-payment-info">
-                                    <form action="" class="diokan-form diokan-form-settings">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="diokan-form__header-group">
-                                                    <div class="diokan-form__header">
-                                                        Edit PayPal
-                                                    </div>
-                                                    <div class="diokan-form__header-notifications">
-                                                        <div class="diokan-form__header-link">
-                                                            <a href="" class="diokan-link diokan-link__underline diokan-link__medium">
-                                                                Set as default payment method
-                                                            </a>
-                                                        </div>
-                                                        <div class="diokan-notification-inner hidden">
-                                                            <div class="diokan-notification-inner__icon">
-                                                                <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                                            </div>
-                                                            <div class="diokan-notification-inner__description">
-                                                                Default Payment Method
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                    <div class="diokan-payment-info-card">
+                                        <div class="diokan-payment-info-card__icon diokan-payment-info-card__icon--active">
+                                            <i class="fa fa-university" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="diokan-payment-info-card__description">
+                                            <div class="diokan-payment-info-card__title">
+                                                Direct Deposit - Hello Bank! Acct # ending 7034
+                                            </div>
+                                            <div class="diokan-payment-info-card__remark">
+                                                Default payment method
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="diokan-form-group">
-                                                    <label class="diokan-form-label">
-                                                        Country where bank is located
-                                                    </label>
-                                                    <select name="" id="select" class="diokan-form-control diokan-form-control-select">
-                                                        <option value="">Select Country</option>
-                                                        <option value="">Canada</option>
-                                                        <option value="">Italy</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="diokan-form-group">
-                                                    <label class="diokan-form-label">
-                                                        IBAN
-                                                    </label>
-                                                    <input type="text" class="diokan-form-control diokan-placeholder-light" placeholder="Enter IBAN">
-                                                </div>
+                                    </div>
+                                    <div class="diokan-payment-info-card">
+                                        <div class="diokan-payment-info-card__icon">
+                                            <i class="fa fa-university" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="diokan-payment-info-card__description">
+                                            <div class="diokan-payment-info-card__title">
+                                                Direct Deposit - Hello Bank! Acct # ending 7034
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="diokan-form-group">
-                                                    <label class="diokan-form-label">
-                                                        Bank Name
-                                                    </label>
-                                                    <input type="text" class="diokan-form-control diokan-placeholder-light" placeholder="Enter Bank Name">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="diokan-form-group">
-                                                    <label class="diokan-form-label">
-                                                        SWIFT / BIC
-                                                    </label>
-                                                    <input type="text" class="diokan-form-control diokan-placeholder-light" placeholder="Enter SWIFT / BIC">
-                                                </div>
+                                    </div>
+                                    <div class="diokan-payment-info-card">
+                                        <div class="diokan-payment-info-card__icon">
+                                            <i class="fa fa-paypal" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="diokan-payment-info-card__description">
+                                            <div class="diokan-payment-info-card__title">
+                                                PayPal - anneta.armstead@company.com
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
-                                <div class="diokan-controls-group diokan-controls-group__between">
-                                    <div class="diokan-controls">
-                                        <button class="diokan-btn diokan-btn-link diokan-btn-link__underline diokan-btn-link__remove">
-                                            Remove Account
-                                        </button>
-                                    </div>
-                                    <div class="diokan-controls-right">
-                                        <button class="diokan-btn diokan-btn-default diokan-btn-primary__settings">
-                                            Cancel
-                                        </button>
-                                        <button class="diokan-btn diokan-btn-primary diokan-btn-primary__settings">
-                                            Save
-                                        </button>
-                                    </div>
+                                <div class="diokan-controls-right">
+                                    <button class="diokan-btn diokan-btn-primary">
+                                        Add Payment Method
+                                    </button>
                                 </div>
                             </div>
                             <div class="diokan-tab-pane" id="4b">
@@ -462,11 +583,15 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </main>
     </div>
 </div>
 <script src="./bundle/bundle.js"></script>
+
+<script>
+
+
+</script>
 </body>
 </html>
