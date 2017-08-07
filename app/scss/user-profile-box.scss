@@ -1,0 +1,22 @@
+$block: diokan-user-profile-box;
+
+.#{$block} {
+  @extend .flexbox;
+  @extend .align-center;
+  &__image{
+    width: 76px;
+    height: 49px;
+    margin-right: 13px;
+  }
+  &__title{
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 1;
+    color: $color2;
+  }
+  &__date{
+    font-size: 16px;
+    line-height: 1;
+    color: $color5;
+  }
+}

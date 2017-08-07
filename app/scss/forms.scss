@@ -36,7 +36,7 @@ $block: diokan-form;
     border: none;
     border-radius: 3px;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: left;
     color: $color5;
     font-family: "Rubik", sans-serif;
@@ -75,6 +75,13 @@ $block: diokan-form;
       .#{$block}-control{
         padding-left: 71px;
         font-family: $font-primary;
+      }
+    }
+    &-align{
+      @extend .flexbox;
+      .diokan-btn{
+        align-self: center;
+        margin-bottom: 3px;
       }
     }
   }
